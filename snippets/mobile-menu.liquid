@@ -34,7 +34,7 @@
             {% comment %} Logout {% endcomment %}
             <a class="mobile-menu__item item-with-icon" href="{{ routes.account_url }}" >
               {% if settings.icon_style != 'text' %}
-                {% include settings.icon, name: 'avatar' %}
+                {% include settings.icon, name: 'avatar-2' %}
               {% endif %}
               <span class="icon-caption">
                 {{ 'layout.customer.my_account' | t | escape }}
@@ -44,7 +44,7 @@
             {% comment %} Login {% endcomment %}
             <a class="mobile-menu__item item-with-icon" href="{{ routes.account_login_url }}" >
               {% if settings.icon_style != 'text' %}
-                {% include settings.icon, name: 'avatar' %}
+                {% include settings.icon, name: 'avatar-2' %}
               {% endif %}
               <span class="icon-caption">
                 {{ 'layout.customer.log_in' | t | escape }}

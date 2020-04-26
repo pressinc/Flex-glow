@@ -15,16 +15,17 @@
         {% if product.price_varies and product.price_min > 0 %}
           <small><em>{{ 'products.general.from' | t }}</em></small>
         {% endif %}
-        {% if product.price_min > 0 %}
-          <span class="money">{{ product.price_min | money }}</span>
-        {% else %}
-          {{ settings.free_price_text }}
-        {% endif %}
         {% if product.compare_at_price_max > product.price %}
           <span class="product-thumbnail__was-price was-price">
             <span class="money">{{ product.compare_at_price_max | money }}</span>
           </span>
         {% endif %}
+        {% if product.price_min > 0 %}
+          <span class="money">{{ product.price_min | money }}</span>
+        {% else %}
+          {{ settings.free_price_text }}
+        {% endif %}
+
       {% else %}
         <span class="product-thumbnail__sold-out sold-out">{{ 'products.product.sold_out' | t }}</span>
       {% endif %}

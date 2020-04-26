@@ -172,7 +172,7 @@
       "from": "from"
     },
     "product": {
-      "sold_out": "Sold Out!",
+      "sold_out": "Sold Out!!!",
       "unavailable": "Unavailable",
       "quantity": "Qty",
       "add_to_cart": "カートに入れる",

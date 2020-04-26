@@ -3778,7 +3778,8 @@ $content-table-foot-cell-color: $text-strong !default;
 /* # Icon
 ================================================== */
 
-$icon-dimensions: 1.2rem !default;
+/* $icon-dimensions: 1.2rem !default; */
+$icon-dimensions: 1.5rem !default;
 $icon-dimensions-small: 1rem !default;
 $icon-dimensions-medium: 1.2rem !default;
 $icon-dimensions-large: 1.8rem !default;
@@ -11924,7 +11925,8 @@ h1.header__logo-text > a {
 
 .image-with-text__link:hover .image-with-text__image,
 .image-with-text__link:hover svg {
-  transform: $transition-zoom;
+  // delete @yasainet 2020/04/27
+  // transform: $transition-zoom;
 }
 
 .image-with-text__image,
@@ -12763,8 +12765,11 @@ $banner-font-size: {{ settings.banner_text_size }}px;
 }
 
 #header .is-width-wide .mega-menu {
-  width: calc(100% + #{$gutter});
+  /* width: calc(100% + #{$gutter}); */
+  width: 100%; // add @yasainet 2020/04/27
   left: calc(-#{$gutter} / 2); // Used to break out of the container on full width
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px; // add @yasainet 2020/04/26
+  padding: 0 15%; // add @yasainet 2020/04/26
 }
 
 .header--search-focus .mega-menu {
@@ -12822,6 +12827,9 @@ $banner-font-size: {{ settings.banner_text_size }}px;
   .mega-menu__image {
     max-height: none;
   }
+  .container { // add @yasainet 2020/04/27
+    padding: 0 15%;
+  }
 }
 
 .mega-menu__block {
@@ -12839,10 +12847,15 @@ $banner-font-size: {{ settings.banner_text_size }}px;
   }
 
   .mega-menu__content {
-    margin-top: 10px;
+    margin: auto;
+    max-width: 200px;
+    text-align: center;
 
     &:first-child {
       margin-top: 0;
+    }
+    p {
+      margin-top: 16px;
     }
   }
 

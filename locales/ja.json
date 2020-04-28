@@ -10,7 +10,7 @@
     },
     "404": {
       "title": "ページが見つかりませんでした😢",
-      "subtext": "We're sorry, but the page you requested could not be found.",
+      "subtext": "We're sorry, but the page you requested could not be found!",
       "continue_shopping_html": "Try searching or <a href=\"\/collections\/all\">continue shopping &rarr;<\/a>"
     },
     "password_page": {

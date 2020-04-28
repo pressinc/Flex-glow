@@ -1418,7 +1418,7 @@
         "type": "range",
         "id": "nav_font_size",
         "label": "Base size",
-        "min": 12,
+        "min": 13,
         "max": 20,
         "default": 14,
         "unit": "px"

@@ -9838,6 +9838,7 @@ $swatch-label-size: 34px;
 .announcement-bar__text {
   @include flexbox();
   @include align-items(center);
+  font-size: 12px; // add @yasainet 2020/04/27
 }
 
 .announcement-bar__icon {
@@ -11430,6 +11431,8 @@ header.header {
   letter-spacing: {{ settings.nav_letter_spacing }}px;
   font-size: {{ settings.nav_font_size }}px;
   text-transform: {{ settings.nav_font_style }};
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px; // add @yasainet 2020/04/27
+
 }
 
 .header__currency-dropdown {
@@ -12771,7 +12774,7 @@ $banner-font-size: {{ settings.banner_text_size }}px;
 #header .is-width-wide .mega-menu {
   /* width: calc(100% + #{$gutter}); */
   width: 100%; // add @yasainet 2020/04/27
-  left: calc(-#{$gutter} / 2); // Used to break out of the container on full width
+  // left: calc(-#{$gutter} / 2); // Used to break out of the container on full width
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px; // add @yasainet 2020/04/26
   padding: 0 15%; // add @yasainet 2020/04/26
 }
@@ -12792,6 +12795,7 @@ $banner-font-size: {{ settings.banner_text_size }}px;
   min-width: 100%;
   z-index: 20;
   box-shadow: 0 8px 8px rgba($black, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px;
 
   @include respond-to('medium-down') {
     box-shadow: 0;

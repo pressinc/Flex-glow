@@ -156,12 +156,12 @@
       "filter": "Filter by",
       "filter_collection": "Filter {{ title }}",
       "featured": "Featured",
-      "best_selling": "Best Selling",
+      "best_selling": "人気順",
       "az": "Alphabetically: A-Z",
       "za": "Alphabetically: Z-A",
-      "price_ascending": "Price: Low to High",
-      "price_descending": "Price: High to Low",
-      "date_descending": "Date: New to Old",
+      "price_ascending": "価格が安い順",
+      "price_descending": "価格が高い順",
+      "date_descending": "新着順",
       "date_ascending": "Date: Old to New"
     }
   },

@@ -172,7 +172,7 @@
       "from": "from"
     },
     "product": {
-      "sold_out": "Sold Out!!!",
+      "sold_out": "完売しました",
       "unavailable": "Unavailable",
       "quantity": "Qty",
       "add_to_cart": "カートに入れる",
@@ -193,10 +193,10 @@
     },
     "notify_form": {
       "email": "Email address",
-      "send": "Send",
+      "send": "送信",
       "message_content": "Please notify me when the following product is back in stock: {{ product }} | {{ url }}",
       "email_content": "Please notify me when the following product is back in stock: ",
-      "post_success": "Thanks! We will notify you when this product becomes available!",
+      "post_success": "ありがとうございます！この商品が入荷されたらお知らせします♡",
       "post_error": "Please provide a valid email address."
     }
   },
